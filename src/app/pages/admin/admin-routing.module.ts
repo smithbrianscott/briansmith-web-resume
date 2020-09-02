@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AdminComponent } from './admin.component';
-import { AdalGuard } from 'adal-angular4';
 import { SettingsComponent } from './settings/settings.component';
 import { AdminService } from '../../@core/data/admin.service';
 
@@ -11,7 +10,6 @@ const routes: Routes = [{
     children: [
         {
             path: 'settings',
-            canActivate: [AdalGuard],
             component: SettingsComponent,
         },        
     ],

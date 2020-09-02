@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AdalGuard } from 'adal-angular4';
 import { UIFeaturesComponent } from './ui-features.component';
 import { EditorDemoComponent } from './editor-demo/editor-demo.component';
 import { GridDemoComponent } from './grid-demo/grid-demo.component';
@@ -13,22 +12,18 @@ const routes: Routes = [{
     children: [
         {
             path: 'editor',
-            canActivate: [AdalGuard],
             component: EditorDemoComponent,
         },
         {
             path: 'grid',
-            canActivate: [AdalGuard],
             component: GridDemoComponent,
         },
         {
             path: 'modal',
-            canActivate: [AdalGuard],
             component: ModalDemoComponent,
         },
         {
             path: 'toaster',
-            canActivate: [AdalGuard],
             component: ToasterDemoComponent,
         }
     ],
