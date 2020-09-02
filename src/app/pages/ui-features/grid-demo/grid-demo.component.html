@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-md-12">
+    <nb-card>
+      <nb-card-header>AG-GRID Demo</nb-card-header>
+      <nb-card-body>
+
+          <ag-grid-angular #agGrid
+          id='gridUsers'
+          style="width:100%;"
+          class="{{agGridThemeClass}}"
+          [rowData]="users"
+          [columnDefs]="columnDefs"
+          [domLayout]="domLayout"
+          [rowSelection]="rowSelection"
+          [pagination]="true"
+          [paginationPageSize]="50"
+          [rowGroupPanelShow]="rowGroupPanelShow"
+          [suppressDragLeaveHidesColumns]="true"
+          [suppressMakeColumnVisibleAfterUnGroup]="true"
+          [suppressCellSelection]="true"
+          [overlayNoRowsTemplate]="noRowsMessage"
+          [groupUseEntireRow]="true"
+          [sideBar]="sideBar"
+          (gridReady)="onGridReady($event)">
+      </ag-grid-angular>
+
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

@@ -1,0 +1,340 @@
+// @nebular theming framework
+@import '~@nebular/theme/styles/theming';
+// @nebular out of the box themes
+@import '~@nebular/theme/styles/themes';
+// material themes
+@import './material/material-dark';
+@import './material/material-light';
+
+$nb-themes: nb-register-theme((
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  select-min-width: 6rem,
+
+  slide-out-background: #f7f9fc,
+  slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
+  slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+), default, default);
+
+$nb-themes: nb-register-theme((
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  select-min-width: 6rem,
+
+  slide-out-background: #252547,
+  slide-out-shadow-color: 2px 0 3px #29157a,
+  slide-out-shadow-color-rtl: -2px 0 3px #29157a,
+), cosmic, cosmic);
+
+$nb-themes: nb-register-theme((
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  select-min-width: 6rem,
+
+  slide-out-background: linear-gradient(270deg, #edf1f7 0%, #e4e9f2 100%),
+  slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
+  slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+), corporate, corporate);
+
+$nb-themes: nb-register-theme((
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  select-min-width: 6rem,
+
+  slide-out-background: linear-gradient(270deg, #222b45 0%, #151a30 100%),
+  slide-out-shadow-color: 0 4px 14px 0 #8f9bb3,
+  slide-out-shadow-color-rtl: 0 4px 14px 0 #8f9bb3,
+), dark, dark);
+
+$nb-themes: nb-register-theme((
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  select-min-width: 6rem,
+  option-list-border-radius: 0,
+
+  slide-out-background: linear-gradient(270deg, #e0e0e0 0%, #ebebeb 100%),
+  slide-out-shadow-color: 0 4px 14px 0 #ebebeb,
+  slide-out-shadow-color-rtl: 0 4px 14px 0 #ebebeb,
+), material-light, material-light);
+
+$nb-themes: nb-register-theme((
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+
+  select-min-width: 6rem,
+  option-list-border-radius: 0,
+
+  slide-out-background: linear-gradient(270deg, #1f1f1f 0%, #292929 100%),
+  slide-out-shadow-color: 0 4px 14px 0 #292929,
+  slide-out-shadow-color-rtl: 0 4px 14px 0 #292929,
+), material-dark, material-dark);
+
+$nb-themes: nb-register-theme((
+
+  color-dark-100: #c2c2c2,
+  color-dark-200: #808080,
+  color-dark-300: #404040,
+  color-dark-400: #424242,
+  color-dark-500: #353535,
+  color-dark-600: #2b2b2b,
+
+  font-family-header: unquote('Exo, Open Sans, sans-serif'),
+  color-primary: #00529C,
+  color-secondary: #f78f24,
+  color-success: #40dc7e,
+  color-info: #4ca6ff,
+  color-warning: #ffa100,
+  color-danger: #ff4c6a,
+  color-grey: #DDDDDD,
+  color-white: #FFFFFF,
+  color-tgh-blue: color-primary,
+
+  accordion-item-background-color: #F5F5F5,
+
+  text-heading-1-font-size: 1.875rem,
+  text-heading-2-font-size: 1.625rem,
+  text-heading-3-font-size: 1.475rem,
+  text-heading-4-font-size: 1.225rem,
+  text-heading-5-font-size: 1.075rem,
+  text-heading-6-font-size: 0.825rem,
+
+  text-heading-5-line-height: 1rem,
+
+  text-heading-1-font-family: font-family-header,
+  text-heading-2-font-family: font-family-header,
+  text-heading-3-font-family: font-family-header,
+  text-heading-4-font-family: font-family-header,
+  text-heading-5-font-family: font-family-header,
+  text-heading-6-font-family: font-family-header,
+
+  text-paragraph-font-size: 0.8375rem,
+  text-label-font-size: 0.75rem,
+
+  header-background-color: color-primary,
+  header-text-color: color-white,
+  header-text-font-family: font-family-primary,
+  header-text-font-size: 1.5rem,
+  header-text-line-height: line-height,
+  header-height: 4.25rem,
+  header-padding: 1.25rem,
+  header-shadow: shadow,
+
+  color-fg-highlight: color-secondary,
+  menu-submenu-active-bg: color-white,
+  menu-submenu-active-border-color: color-secondary,
+
+  link-text-color: color-primary,
+  link-text-hover-color: color-primary,
+  link-text-focus-color: color-primary,
+
+  text-primary-hover-color: color-primary,
+  text-primary-color: color-primary,
+  scrollbar-background-color: color-grey,
+  scrollbar-color: color-secondary,
+  sidebar-scrollbar-background-color: color-grey,
+  sidebar-scrollbar-color: color-grey,
+  layout-scrollbar-background-color: color-grey,
+
+  sidebar-background-color: color-white,
+
+  popover-text-color: color-grey,
+  popover-background-color: color-white,
+
+  actions-icon-color: color-white,
+
+  form-control-selected-border-color: color-primary,
+
+  tabset-tab-active-text-color: #000000,
+  tabset-tab-active-underline-color: color-secondary,
+  tabset-tab-hover-text-color: #000000,
+  tabset-tab-hover-underline-color: none,
+
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+  card-header-color: color-white,
+
+  select-min-width: 6rem,
+  option-list-border-radius: 0,
+
+  slide-out-background: linear-gradient(270deg, #e0e0e0 0%, #ebebeb 100%),
+  slide-out-shadow-color: 0 4px 14px 0 #ebebeb,
+  slide-out-shadow-color-rtl: 0 4px 14px 0 #ebebeb,
+), tgh-light, material-light);
+
+$nb-themes: nb-register-theme((
+
+  color-primary-100: #fff3cd,
+  color-primary-200: #ffe49b,
+  color-primary-300: #ffd169,
+  color-primary-400: #ffbe43,
+  color-primary-500: #ff9f05,
+  color-primary-600: #db8003,
+  color-primary-700: #b76302,
+  color-primary-800: #934a01,
+  color-primary-900: #7a3800,
+
+  color-dark-100: #c2c2c2,
+  color-dark-200: #808080,
+  color-dark-300: #404040,
+  color-dark-400: #424242,
+  color-dark-500: #353535,
+  color-dark-600: #2b2b2b,
+  
+  font-family-header: unquote('Exo, Open Sans, sans-serif'),
+  color-primary: color-dark-400,
+  color-secondary: #f78f24,
+  color-success: #40dc7e,
+  color-info: #4ca6ff,
+  color-warning: #ffa100,
+  color-danger: #ff4c6a,
+  color-grey: #DDDDDD,
+  color-white: #FFFFFF,
+  color-black: #000000,
+  color-link: #838383,
+  color-tgh-blue: #00529C,
+
+  text-primary-active-color:color-secondary,
+  color-primary-active: color-secondary,
+  text-primary-color: #57b6ff,
+  text-primary-hover-color: #139aff,
+  color-primary-focus: #57b6ff,
+
+  accordion-item-background-color: #404040,
+
+  tabset-tab-active-text-color: color-secondary,
+  tabset-tab-active-underline-color: color-secondary,
+  tabset-tab-hover-text-color: color-primary-600,
+  tabset-tab-hover-underline-color: none,
+
+  text-heading-1-font-size: 1.875rem,
+  text-heading-2-font-size: 1.625rem,
+  text-heading-3-font-size: 1.475rem,
+  text-heading-4-font-size: 1.225rem,
+  text-heading-5-font-size: 1.075rem,
+  text-heading-6-font-size: 0.825rem,
+
+  text-heading-5-line-height: 1rem,
+
+  text-heading-1-font-family: font-family-header,
+  text-heading-2-font-family: font-family-header,
+  text-heading-3-font-family: font-family-header,
+  text-heading-4-font-family: font-family-header,
+  text-heading-5-font-family: font-family-header,
+  text-heading-6-font-family: font-family-header,
+
+  select-outline-basic-focus-background-color: color-primary-focus,
+
+  text-paragraph-font-size: 0.8375rem,
+  text-label-font-size: 0.75rem,
+
+  stepper-step-text-color: color-white,
+  stepper-step-index-border-color: color-dark-200,
+
+  header-background-color: color-primary,
+  header-text-color: color-white,
+  header-text-font-family: font-family-primary,
+  header-text-font-size: 1.5rem,
+  header-text-line-height: line-height,
+  header-height: 4.25rem,
+  header-padding: 1.25rem,
+  header-shadow: shadow,
+
+  layout-padding-top: 2.25rem,
+
+  menu-item-icon-margin: 0 0.5rem 0 0,
+
+  card-height-tiny: 13.5rem,
+  card-height-small: 21.1875rem,
+  card-height-medium: 28.875rem,
+  card-height-large: 36.5625rem,
+  card-height-giant: 44.25rem,
+  card-margin-bottom: 1.875rem,
+  card-header-with-select-padding-top: 0.5rem,
+  card-header-with-select-padding-bottom: 0.5rem,
+  card-header-color: color-dark-500,
+
+  select-min-width: 6rem,
+  option-list-border-radius: 0,
+
+  slide-out-background: linear-gradient(270deg, #1f1f1f 0%, #292929 100%),
+  slide-out-shadow-color: 0 4px 14px 0 #292929,
+  slide-out-shadow-color-rtl: 0 4px 14px 0 #292929,
+), tgh-dark, material-dark);
+
+
+

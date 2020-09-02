@@ -1,0 +1,10 @@
+<div class="modal-header">
+    <span>You're Idle</span>
+</div>
+<div class="modal-body">
+    <p >You'll be logged out in {{calculateTimeRemaining(countdown)}}</p>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-warning animate" role="progressbar"
+        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" [style.width]='getStyle(countdown)'></div>
+    </div>
+</div>

@@ -1,0 +1,410 @@
+@import 'themes';
+
+/**************************************************************************************************/
+/*                              styles specific to tgh-light theme                                */
+/**************************************************************************************************/
+.nb-theme-tgh-light {
+  a:not([href]):not([tabindex]) {
+    color: nb-theme(color-tgh-blue);
+  }
+
+  a:not([href]):not([tabindex]):hover {
+    color: nb-theme(color-info);
+  }
+
+  ngx-header nb-toggle.status-basic .toggle {
+    background-color: nb-theme(color-tgh-blue);
+    border-color: nb-theme(color-white);
+  }
+
+  ngx-header nb-toggle.status-basic .native-input:enabled + .toggle:hover {
+    background-color: nb-theme(color-tgh-blue);
+    border-color: nb-theme(color-white);
+  }
+
+  ngx-header nb-toggle.status-basic .native-input:enabled:active + .toggle {
+    background-color: nb-theme(color-tgh-blue);
+    border-color: nb-theme(color-white);
+  }
+
+  ngx-header nb-toggle.status-basic .native-input:enabled:focus + .toggle {
+    background-color: nb-theme(color-tgh-blue);
+    border-color: nb-theme(color-white);
+  }
+
+}
+
+/**************************************************************************************************/
+/*                              styles specific to tgh-dark theme                                 */
+/**************************************************************************************************/
+.nb-theme-tgh-dark {
+
+  a:not([href]):not([tabindex]) {
+    color: nb-theme(text-primary-color);
+  }
+  
+  a:not([href]):not([tabindex]):hover {
+    color: nb-theme(text-primary-hover-color);
+  }
+
+  .ql-mention-list-container {
+    background-color: nb-theme(color-dark-600) !important;
+  }
+
+  .ql-mention-list-item.selected {
+    background-color: nb-theme(color-dark-500) !important;
+  }
+
+  .mention {
+    background-color: nb-theme(color-tgh-blue) !important;
+  }
+  
+  nb-card-header {
+    border-bottom: 1px solid nb-theme(color-black);
+  }
+  
+  nb-card.mat-card nb-card-header {
+    background-color: nb-theme(color-primary);
+  }
+
+  .fas {
+    color: nb-theme(color-white) !important;
+  
+    &.normal-color {
+      color: nb-theme(color-white) !important;
+    }
+  
+    &.close {
+      opacity: 1;
+    }
+  }
+
+  .mat-input-element {
+    caret-color: nb-theme(color-primary-500);
+  }
+  
+  .mat-form-field.mat-focused {
+    .mat-form-field-label {
+      color: nb-theme(color-primary-500);
+    }
+    .mat-form-field-ripple {
+      background-color: nb-theme(color-primary-500);
+    }
+  }
+  
+  .mat-form-field.mat-focused.mat-primary {
+    .mat-select-arrow {
+      color: nb-theme(color-primary-500);
+    }
+  }
+  
+  .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: nb-theme(color-primary-500);
+  }
+  
+  .ql-toolbar {
+    background-color: nb-theme(color-dark-100);
+  }
+  
+  ngx-header nb-toggle.status-basic .toggle-switcher {
+    background-color: nb-theme(color-white);
+  }
+  
+  ngx-header nb-toggle.status-basic .toggle.checked {
+    background-color: nb-theme(color-primary);
+    border-color: nb-theme(color-white);
+  }
+  
+  ngx-header nb-toggle.status-basic .native-input:enabled + .toggle:hover.checked {
+    background-color: nb-theme(color-primary);
+    border-color: nb-theme(color-white);
+  }
+  
+  ngx-header nb-toggle.status-basic .native-input:enabled:active + .toggle.checked {
+    background-color: nb-theme(color-primary);
+    border-color: nb-theme(color-white);
+  }
+  
+  ngx-header nb-toggle.status-basic .native-input:enabled:focus + .toggle.checked {
+    background-color: nb-theme(color-primary);
+    border-color: nb-theme(color-white);
+  }
+
+  // AG-GRID SPECIFIC STYLES
+  .ag-column-drop.ag-unselectable.ag-column-drop-horizontal.ag-column-drop-row-group {
+    background-color: nb-theme(color-dark-500)
+  }
+  
+  .ag-header {
+    background-color: nb-theme(color-dark-500);
+  }
+  
+  .ag-theme-balham-dark .ag-row-even {
+    background-color: nb-theme(color-dark-500);
+  }
+  
+  .ag-theme-balham-dark .ag-row-odd {
+    background-color: nb-theme(color-dark-500);
+  }
+  
+  .ag-theme-balham-dark .ag-row-even:hover {
+    background-color: nb-theme(color-primary);
+  }
+  
+  .ag-theme-balham-dark .ag-row-odd:hover {
+    background-color: nb-theme(color-primary);
+  }
+  
+  .ag-theme-balham-dark .ag-row-selected {
+    background-color: nb-theme(color-primary);
+    border-color: nb-theme(color-dark-500);
+  }
+  
+  .ag-theme-balham-dark .ag-side-bar .ag-side-buttons {
+    background: nb-theme(color-dark-500);
+  }
+  
+  .ag-theme-balham-dark {
+    background-color: nb-theme(color-dark-500);
+  }
+  
+  .ag-theme-balham-dark .ag-column-drop-cell {
+    background: nb-theme(color-primary);
+  }
+}
+
+ngx-header nb-toggle.status-basic {
+  margin-top: 7px;
+}
+
+.ql-mention-list-item {
+  cursor: pointer !important;
+  height: 44px !important;
+  line-height: 44px !important;
+  font-size: 16px !important;
+  padding: 0 20px !important;
+  vertical-align: middle !important; 
+}
+
+.ql-mention-list {
+  max-height: 180px !important;
+}
+
+ngx-header nb-toggle nb-icon svg {
+  display: none;
+}
+
+.float-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #E4E4E4;
+}
+
+.ql-tooltip.ql-editing {
+  left: unset !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+*,*:focus,*:hover {
+  outline: none;
+}
+
+.btn {
+  font-family: inherit !important;
+}
+
+.margin-right-10 {
+  margin-right: 10px;
+}
+
+.margin-bottom-5 {
+  margin-bottom: 5px;
+}
+
+.margin-top-5 {
+  margin-top: 5px;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+//Drop shadows on cards
+nb-card,
+nb-sidebar,
+nav {
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15)!important;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15)!important;
+}
+
+.cursor-all-scroll {
+  cursor: all-scroll;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+nb-card.dialog-card nb-card-footer {
+  text-align: right;
+}
+
+a {
+  cursor: pointer;
+}
+
+// Menu toggle icon color
+nb-layout-header nav a {
+  color: #FFFFFF !important;
+}
+
+ngx-header nb-user .user-name,
+ngx-header nb-user .user-title,
+ngx-header nb-icon {
+  color: #FFFFFF !important;
+}
+
+ngx-header nb-action,
+ngx-header a {
+  border: none !important;
+}
+
+// Anuglar Material full width
+.mat-full-width {
+  width: 100%;
+}
+
+// Override the angular material button color
+.mat-flat-button.mat-primary:not(:disabled), 
+.mat-raised-button.mat-primary:not(:disabled), 
+.mat-fab.mat-primary:not(:disabled), 
+.mat-mini-fab.mat-primary:not(:disabled) {
+  background-color: nb-theme(color-tgh-blue) !important;
+}
+
+.mat-flat-button.mat-success:not(:disabled), 
+.mat-raised-button.mat-success:not(:disabled), 
+.mat-fab.mat-success:not(:disabled), 
+.mat-mini-fab.mat-success:not(:disabled) {
+  background-color: nb-theme(color-success) !important;
+  color: white;
+}
+
+// Autocomplete text box styles
+.clearable__clear{
+  // display: none;
+  position: absolute;
+  right:0; top:0;
+  padding: 0 8px;
+  font-style: normal;
+  font-size: 1.2em;
+  user-select: none;
+  cursor: pointer;
+}
+
+// Green stepper completed button
+.step.completed .label-index {
+  background-color: #27ae60 !important;
+  border: 2px solid #27ae60 !important;
+}
+
+// Green stepper completed button
+.step.completed .label {
+  color: #27ae60 !important;
+}
+
+.nb-theme-tgh-light nb-layout nb-sidebar ::-webkit-scrollbar-thumb {
+  background-color: #D3D3D3 !important;
+  background: #D3D3D3 !important;
+}
+
+// Scroll bar style override
+webkit-scrollbar-thumb {
+  background-color: #e67e22 !important;
+  background: #e67e22 !important;
+}
+
+// Scroll bar style override
+.nb-theme-tgh-light nb-layout ::-webkit-scrollbar-thumb {
+  background-color: #FFA100 !important;
+  background: #FFA100 !important;
+}
+
+// Angular Material checkbox over-write
+md-checkbox .md-icon {
+  background: red;
+}
+
+md-checkbox.md-default-theme.md-checked .md-icon {
+  background: orange;
+}
+
+.mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
+  background: orange !important;
+}
+
+// Checkbox color and ripple effect override
+.mat-checkbox-checked.mat-accent .mat-checkbox-background, .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: #e67e22 !important;
+}
+
+.mat-ripple-element {
+  background-color: rgba(223, 230, 233, 0.4) !important;
+}
+
+// AG-GRID selected row style
+.ag-theme-balham .ag-row-selected {
+  background-color: #dde4e6 !important;
+}
+
+.close {
+  color: unset !important;
+  cursor: pointer !important;
+}
+
+.close:hover {
+  color: unset !important;
+}
+
+.ql-container {
+  height: unset !important;
+}
+
+.ql-editor {
+  min-height: 150px;
+}
+
+nb-card.accent {
+  border-top-style: solid !important;
+}
+
+iframe[id="adalRenewFramehttps://graph.microsoft.com"] {
+  display: none;
+}
+
+@media (min-width: 576px) { 
+  .dialog-card {
+    max-height: 83vh;
+    max-width: 60vw; 
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) { 
+  .dialog-card {
+    max-height: 80vh;
+    max-width: 90vw; 
+    width: 100%;
+  }
+
+  ngx-header nb-toggle.status-basic {
+    margin-left: -20px;
+  }
+}

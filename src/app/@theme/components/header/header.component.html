@@ -1,0 +1,63 @@
+<div class="header-container">
+  <div class="logo-container">
+    <a
+      href="#"
+      class="sidebar-toggle"
+      matRipple
+      [matRippleUnbounded]="true"
+      [matRippleCentered]="true"
+      (click)="toggleSidebar()"
+    >
+      <nb-icon [icon]="(materialTheme$ | async) ? 'menu-outline' : 'menu-2-outline'"></nb-icon>
+    </a>
+    <a class="logo" href="#" (click)="navigateHome()">TGH</a>
+  </div>
+  <!-- <nb-select
+    status="primary"
+    matRipple
+    [selected]="currentTheme"
+    (selectedChange)="changeTheme($event)"
+  >
+    <nb-option
+      *ngFor="let theme of themes"
+      [value]="theme.value"
+      matRipple
+    >{{ theme.name }}</nb-option>
+  </nb-select> -->
+  <nb-toggle status="basic" title="Change Theme" [(ngModel)]="themeToggle" class="control-item" (checkedChange)="swapTheme()"></nb-toggle>
+</div>
+
+<div class="header-container">
+  <nb-actions size="small">
+
+    <nb-action *ngIf="allowedToSeeGlobalSearch" class="control-item">
+      <nb-search type="rotate-layout"></nb-search>
+    </nb-action>
+    <!-- <nb-action
+      class="control-item"
+      icon="email-outline"
+      matRipple
+      [matRippleUnbounded]="true"
+      [matRippleCentered]="true"
+    ></nb-action> -->
+    <!-- <nb-action
+      class="control-item"
+      icon="bell-outline"
+      matRipple
+      [matRippleUnbounded]="true"
+      [matRippleCentered]="true"
+    ></nb-action> -->
+    <nb-action class="user-action" *nbIsGranted="['view', 'user']">
+      <nb-user [nbContextMenu]="userMenu"
+                nbContextMenuTag="user-menu"
+               [onlyPicture]="userPictureOnly"
+               [name]="user?.fullName"
+               [title]="user?.title"
+               [picture]="user?.userImage">
+      </nb-user>
+    </nb-action>
+    <nb-action *ngIf="allowedToSeeSettings" class="control-item">
+      <nb-action icon="settings-2-outline" class="toggle-layout" (click)="toggleSettings()"></nb-action>
+  </nb-action>
+  </nb-actions>
+</div>

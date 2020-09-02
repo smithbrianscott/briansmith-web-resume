@@ -1,0 +1,44 @@
+<div class="row">
+  <div class="col-md-12">
+    <nb-card>
+      <nb-card-header>Toaster Demo</nb-card-header>
+      <nb-card-body>
+
+        <div class="row">
+          <div class="col-md-12">
+            <mat-form-field class="mat-full-width">
+                <mat-select placeholder="Toast Type"
+                            id="ddlToastType"
+                            [(ngModel)]="toastType"
+                            name="ddlToastType">
+                    <mat-option *ngFor="let type of toastTypeList"
+                                [value]="type.name">
+                        {{type.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="col-md-12">
+            <mat-form-field class="mat-full-width">
+                <input id="txtHeader" required matInput placeholder="Toast Header" [(ngModel)]="header" name="txtHeader">
+            </mat-form-field>
+          </div>
+          <div class="col-md-12">
+            <mat-form-field class="mat-full-width">
+                <input id="txtMessage" required matInput placeholder="Toast Message" [(ngModel)]="message" name="txtMessage">
+            </mat-form-field>
+          </div>
+          <div class="col-md-12">
+              <button mat-raised-button
+                    id="btnSubmit" (click)="popToast();"
+                    color="primary"
+                    type="button">
+                    Show Toast
+              </button>
+          </div>
+        </div>
+
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
