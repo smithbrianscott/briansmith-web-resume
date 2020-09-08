@@ -19,7 +19,6 @@ import {
   NbWindowModule,
 } from '@nebular/theme';
 import { TGHHttpService } from './@core/data/tgh-http.service';
-import { AdalGuard, AdalService, AdalInterceptor } from 'adal-angular4';
 import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { LicenseManager } from 'ag-grid-enterprise';
 import { ToastrModule } from 'ngx-toastr';
@@ -46,8 +45,7 @@ LicenseManager.setLicenseKey("Florida_health_Sciences__Help_Desk_1Devs18_Decembe
     }),
   ],
   bootstrap: [AppComponent],
-  providers: [TGHHttpService, AdalGuard, AdalService,
-    { provide: HTTP_INTERCEPTORS, useClass: AdalInterceptor, multi: true },
+  providers: [TGHHttpService,
     { provide: APP_BASE_HREF, useValue: '/' },
     { provide: LocationStrategy, useClass: HashLocationStrategy },]
 })

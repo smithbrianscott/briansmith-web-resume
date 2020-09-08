@@ -14,19 +14,9 @@ const routes: Routes = [{
       component: HomeComponent,
     },
     {
-      path: 'admin',
-      loadChildren: () => import('./admin/admin.module')
-        .then(m => m.AdminModule),
-    },
-    {
       path: 'miscellaneous',
       loadChildren: () => import('./miscellaneous/miscellaneous.module')
         .then(m => m.MiscellaneousModule),
-    },
-    {
-      path: 'ui-features',
-      loadChildren: () => import('./ui-features/ui-features.module')
-        .then(m => m.UIFeaturesModule),
     },
     {
       path: '',

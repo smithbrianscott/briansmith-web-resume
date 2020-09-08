@@ -6,38 +6,15 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'home',
     link: '/pages/home',
     home: true,
-    
   },
   {
-    title: 'Setings',
-    icon: 'settings',
-    link: '/pages/admin/settings',
+    title: 'Resume',
+    icon: 'file-text-outline',
+    link: '/pages/resume'
   },
   {
-    title: 'UI Features',
-    icon: 'star-outline',
-    expanded: true,
-    children: [
-      {
-        title: 'editor',
-        icon: 'edit-2-outline',
-        link: '/pages/ui-features/editor',
-      },
-      {
-        title: 'grid',
-        icon: 'list-outline',
-        link: '/pages/ui-features/grid',
-      },
-      {
-        title: 'modal',
-        icon: 'browser-outline',
-        link: '/pages/ui-features/modal',
-      },
-      {
-        title: 'toaster',
-        icon: 'message-square-outline',
-        link: '/pages/ui-features/toaster',
-      },
-    ]
+    title: 'Portfolio',
+    icon: 'briefcase-outline',
+    link: '/pages/portfolio'
   }
 ];

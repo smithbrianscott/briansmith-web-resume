@@ -28,7 +28,6 @@ import {
   NbDialogModule,
 } from '@nebular/theme';
 import { RouterModule } from '@angular/router';
-import { ImageService } from '../data/image.service';
 import { CKEditorModule } from 'ng2-ckeditor';
 import { MaterialModule } from './material.module';
 import { QuillModule } from 'ngx-quill'
@@ -89,7 +88,7 @@ const NB_MODULES = [
     declarations: [
 
     ],
-    providers: [ ImageService ],
+    providers: [ ],
     entryComponents: [
 
     ]

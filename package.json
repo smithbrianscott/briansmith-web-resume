@@ -52,8 +52,6 @@
     "@ng-bootstrap/ng-bootstrap": "^6.0.2",
     "@ng-idle/core": "^8.0.0-beta.4",
     "@swimlane/ngx-charts": "^13.0.2",
-    "adal-angular": "^1.0.17",
-    "adal-angular4": "^9.0.0-beta.0",
     "ag-grid-angular": "^22.1.1",
     "ag-grid-community": "^22.1.1",
     "ag-grid-enterprise": "^22.1.1",
